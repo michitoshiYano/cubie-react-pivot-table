@@ -8,6 +8,7 @@ import cubejs from '@cubejs-client/core';
 import { CubeProvider } from '@cubejs-client/react';
 import client from './graphql/client';
 import Grid from './components/Grid';
+import GridCubeOrg from './components/GridCubeOrg';
 
 const API_URL = process.env.REACT_APP_API_URL;
 const CUBEJS_TOKEN = process.env.REACT_APP_CUBEJS_TOKEN;
@@ -22,6 +23,8 @@ const AppLayout = ({ children }) => (
     }}
   >
     <Grid />
+    <h1>PivotTable sample</h1>
+    <GridCubeOrg />
   </Layout>
 );
 
